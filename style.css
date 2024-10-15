@@ -1,0 +1,171 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+/* Header Styling */
+header {
+  background-color: #6c757d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #343a40;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+header img {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Main Content Styling */
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #343a40;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+ul li::before {
+  content: "✔";
+  color: #28a745;
+  padding-right: 10px;
+  font-size: 1.3em;
+}
+
+/* Day sections styling */
+#day1, #day2, #day3, #day4 {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#day1 {
+  background-color: #f1f3f5;
+}
+
+#day2 {
+  background-color: #f8f9fa;
+}
+
+#day3 {
+  background-color: #e9ecef;
+}
+
+#day4 {
+  background-color: #f1f3f5;
+}
+
+/* Image Section Styling */
+.section-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.section-images img {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.section-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+  background-color: #6c757d;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+  border-top: 5px solid #343a40;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 1em;
+}
+
+/* Link Styling */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .section-images img {
+      max-width: 100%;
+      margin: 10px 0;
+  }
+
+  header h1 {
+      font-size: 2em;
+  }
+  
+  h2 {
+      font-size: 1.6em;
+  }
+
+  p, ul li {
+      font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.6em;
+  }
+
+  h2 {
+      font-size: 1.4em;
+  }
+
+  p, ul li {
+      font-size: 0.9em;
+  }
+}
